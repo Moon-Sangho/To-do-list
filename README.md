@@ -8,3 +8,6 @@
 
 * 3rd commit
   to do list 화면 출력 설정
+
+* 4th commit
+  to do list를 localStorage에 저장되도록 설정
