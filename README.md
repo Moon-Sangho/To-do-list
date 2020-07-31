@@ -14,3 +14,6 @@
 
 * 5th commit
   to do list 삭제 기능 설정
+
+* 6th commit
+  랜덤 배경이미지 설정
