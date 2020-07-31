@@ -27,3 +27,6 @@
 
 * 9th commit
   배경이미지 404 error 때문에 해결 시도2 (bg.js내에서 /img -> img)
+
+* 10th commit
+  미디어쿼리 추가

@@ -72,3 +72,22 @@ body {
     z-index: -1;
     animation: fadeIn .5s linear;
 }
+
+/* 미디어쿼리 */
+@media (max-width: 435px) {
+    body {
+        font-size: 15px;
+    }
+
+    .js-clock h1 {
+        font-size: 50px;
+    }
+
+    .js-form input {
+        font-size: 15px;
+    }
+
+    .js-toDoForm input {
+        font-size: 15px;
+    }
+}
