@@ -10,4 +10,7 @@
   to do list 화면 출력 설정
 
 * 4th commit
-  to do list를 localStorage에 저장되도록 설정
+  to do list가 localStorage에 저장되도록 설정
+
+* 5th commit
+  to do list 삭제 기능 설정

@@ -2,7 +2,21 @@ const toDoForm = document.querySelector(".js-toDoForm");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.querySelector(".js-toDoList");
 const TODOS_LS = 'toDos';
-const toDos = [];
+let toDos = [];
+
+// to do list 삭제 기능 설정
+function deleteTodo(event) {
+    const btn = event.target;
+    const li = btn.parentNode;
+    toDoList.removeChild(li);
+    console.log(li);
+    console.log(toDos);
+    const cleanToDos = toDos.filter(function(toDo) {
+        return toDo.id !== parseInt(li.id);
+    });
+    toDos = cleanToDos;
+    saveToDos();
+}
 
 // localStorage 저장 함수 생성
 function saveToDos() {
@@ -14,6 +28,7 @@ function paintToDo(text) {
     const li = document.createElement("li");
     const delBtn = document.createElement("button");
     delBtn.innerText = "❌";
+    delBtn.addEventListener("click", deleteTodo);
     const span = document.createElement("span");
     const newId = toDos.length + 1;
     span.innerText = text;
@@ -51,6 +66,6 @@ function loadToDos() {
 function init() {
     loadToDos();
     toDoForm.addEventListener("submit", handleSubmit);
-};
+}
 
 init()
