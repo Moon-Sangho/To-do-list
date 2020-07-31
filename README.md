@@ -23,4 +23,7 @@
   CSS 설정
 
 * 8th commit
-  배경이미지 404 error 때문에 해결 시도(ogp 이미지 위치 옮겨봄)
+  배경이미지 404 error 때문에 해결 시도 (ogp 이미지 위치 옮겨봄)
+
+* 9th commit
+  배경이미지 404 error 때문에 해결 시도2 (bg.js내에서 /img -> img)
